@@ -1,0 +1,297 @@
+Prefix:
+    Prefix: '&6The Bridge &8» &7'
+    Party: '&3Party &8» &7'
+
+Messages:
+    Join: '&a&l» &7{player} &6Joined &7({playing}&7/{max}&7)'
+    Leave: '&c&l« &7{player} &6has left &7({playing}&7/{max}&7)'
+    Kill: '&7You killed {victim}'
+    Death: '&7You were killed by {killer}'
+    Kill-by-knock: '&7You knocked {victim} &7into the void&7.'
+    Death-by-knock: '&7You were knocked into the void by {killer}&7.'
+    Fall-in-void: '&7You fell into the void.'
+    Starting-game: '&eThe game starts in &6{seconds} &eseconds'
+    Not-enought-players: '&cThere are not enought players to start!'
+    Teleported-to: '&7Teleported to &7{player}'
+    Searching-arenas: '&7Searching for available arenas...'
+    Ingame-command-deny: '&7You can''t use this command in game!'
+    Not-enought-coins: '&7You don''t have enought coins'
+    Player-not-found: '&7Player not found.'
+    No-Permission: '&cYou are not allowed to use this.'
+    In-Game: '&cYou can''t do this while playing!'
+    Not-In-Game: '&cYou are not in game!'
+    Specify-Arena-Name: '&cYou must specify an arena name!'
+    Arena-Not-Exists: '&cThis arena doesn''t even exists!'
+    You-must-be-in-lobby: '&cYou must be in lobby do do this!'
+    Not-now: '&7You can''t do this right now.'
+    Forced-Start: '&7{player} &7FORCED ARENA TO START&c!'
+    Arena-Full: '&cThis arena is full of players!'
+    Arena-Restarting: '&cThis arena is currently being restarted!'
+    Saved-hotbar: '&aHotbar saved!'
+    Reset-hotbar: '&cReseted Hotbar!'
+    Team-full: '&7This team is full of players.'
+    Join-Team: '&7You joined in {team} &7team.'
+    Trail-Purchase: '&aPurchased &e{name} &atrail.'
+    Hat-Purchase: '&aPurchased &e{name} &aHat.'
+    Trail-Select: '&aSelected &e{name} &atrail.'
+    Hat-Select: '&aSelected &e{name} &aHat.'
+    Goal:
+        '1': 1st
+        '2': 2nd
+        '3': 3rd
+        '4': 4th
+        '5': 5th
+    HELP:
+        PLAYER:
+        - '&8&l«&7&l&m-------&8[ &8&l➩ &6&nThe Bridge&r &8]&7&l&m-------&r&8&l»'
+        - '&7&l➜ &a/bridge list'
+        - '&7&l➜ &a/bridge join &8(&7arena_name&8)'
+        - '&7&l➜ &a/bridge AutoJoin'
+        - '&7&l➜ &a/bridge party'
+        - '&7&l➜ &a/bridge leave'
+        - '&8&l«&7&l&m--------------------&r&8&l»'
+        ADMIN:
+        - '&8&l«&7&l&m-------&8[ &8&l➩ &6&nThe Bridge&r &8]&7&l&m-------&r&8&l»'
+        - '&7&l➜ &a/bridge start'
+        - '&7&l➜ &a/bridge coins take/set/give &8(&7player&8)'
+        - '&7&l➜ &a/bridge update-leaderboards'
+        - '&7&l➜ &a/bridge resetstats &8(&7player&8)'
+        - '&7&l➜ &a/bridge reload'
+        - '&8&l«&7&l&m--------------------&r&8&l»'
+        SETUP:
+        - '&8&l«&7&l&m-------&8[ &8&l➩ &6&nThe Bridge&r &8]&7&l&m-------&r&8&l»'
+        - '&7&l➜ &a/bridge setlobby'
+        - '&7&l➜ &a/bridge createArena &8(&7arena_name&8)'
+        - '&7&l➜ &a/bridge deleteArena &8(&7arena_name&8)'
+        - '&7&l➜ &a/bridge editArena &8(&7arena_name&8)'
+        - '&7&l➜ &a/bridge setlobbyleave'
+        - '&8&l«&7&l&m--------------------&r&8&l»'
+
+Party-Messages:
+    Create: '&7You created the Party.'
+    Join: '&7{player} &7joined to the party'
+    Left: '&7{player} &7left the Party.'
+    Full: '&7This Party is Full'
+    Kick-Player: '&7You kicked &7{player} &7from the Party.'
+    Kicked-From-Party: '&7{leader} &7kicked you from the Party.'
+    Disband: '&7{leader} &cDisabanded the Party.'
+    Set-Private: '&7The party is now &cPrivate'
+    Set-Public: '&7The party is now &aPublic'
+    Is-Private: '&7This Party is &cPrivate&7, you need to be invited to join.'
+    Invite: '&7You invited {player} &7to your Party.'
+    No-Party: '&7You don''t have a Party.'
+    Received-Invite: '&7{leader} &7invited you to his party &a[<cmd:/bridge party
+        join {leader}><tooltip:&aClick to join>JOIN].'
+
+SUMMARY:
+    DOUBLES:
+    - '&6▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+    - ''
+    - '&8&l● &f&lTHE BRIDGE &e{mode} &8&l●'
+    - ''
+    - '{team} WINS!'
+    - ''
+    - '&1&l{blue-goals} &7- &c&l{red-goals}'
+    - ''
+    - '&6▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+    QUADRUPLES:
+    - '&6▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+    - ''
+    - '&8&l● &f&lTHE BRIDGE &e{mode} &8&l●'
+    - ''
+    - '{team} WINS!'
+    - ''
+    - '&cRed &8&l- {display-red}'
+    - '&aGreen &8&l- {display-green}'
+    - '&eYellow &8&l- {display-yellow}'
+    - '&1Blue &8&l- {display-blue}'
+    - ''
+    - '&6▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+
+GOALS:
+    DOUBLES:
+    - '&6▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+    - ''
+    - '{player} &7(&a{health} &c&l❤&7) &escored! &7(&6{goal} Goal&7)'
+    - ''
+    - '&1&l{blue-goals} &7- &c&l{red-goals}'
+    - ''
+    - '&6▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+    QUADRUPLES:
+    - '&6▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+    - ''
+    - ' {player} &7(&a{health}&c&l❤&7) &escored on {lose-team}&7! (&6{goal} Goal&7)'
+    - '{team} &7stole &c1❤ &7from {lose-team}!'
+    - ''
+    - '&cRed &8&l- {display-red}'
+    - '&aGreen &8&l- {display-green}'
+    - '&eYellow &8&l- {display-yellow}'
+    - '&1Blue &8&l- {display-blue}'
+    - ''
+    - '&6▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+
+GAME-START:
+    SOLO:
+    - '&6▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+    - ''
+    - '&8&l● &f&lTHE BRIDGE &e{mode} &8&l●'
+    - ''
+    - '&eCross the bridge to score goals.'
+    - '&eKnock off your oppenent to gain a clear path.'
+    - ''
+    - '&eFirst player to score 5 goals wins!'
+    - ''
+    - '&6▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+    TEAM:
+    - '&6▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+    - ''
+    - '&8&l● &f&lTHE BRIDGE &e{mode} &8&l●'
+    - ''
+    - '&eCross the bridge to score goals.'
+    - '&eKnock off your oppenent to gain a clear path.'
+    - ''
+    - '&eFirst team to score 5 goals wins!'
+    - ''
+    - '&6▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+    QUADRUPLES:
+    - '&6▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+    - ''
+    - '&8&l● &f&lTHE BRIDGE &e{mode} &8&l●'
+    - ''
+    - '&eCross the bridges to score goals on enemy Teams.   '
+    - '&eEach team starts with &a2❤ (lives)&e. Scoring goals steals '
+    - '&a+1❤ &efor your team while allowing goals'
+    - '&etakes &c-1❤ &efrom your team.'
+    - ''
+    - '&eWhen there are 2 teams remaining, you can no longer'
+    - '&eregain lives! Last team standing wins!'
+    - ''
+    - '&6▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+
+# it may drop performace when enabled.
+Scoreboard:
+    ANIMATED-TITLE:
+        Enabled: false
+        INTERVAL: 5
+        FRAMES:
+        - '&e&lTHE BRIDGE'
+        - '&6&lTHE BRIDGE'
+        - '&e&lTHE BRIDGE'
+    LOBBY:
+        Name: '&e&lTHE BRIDGE'
+        Update: 3 seconds
+        Lines:
+        - ''
+        - '&6&l➩ &f&lSTATS'
+        - ''
+        - '&8&l➩ &7WINS &e{wins}'
+        - '&8&l➩ &7COINS &e{coins}'
+        - '&8&l➩ &7KILLS &e{kills}'
+        - '&8&l➩ &7DEATHS &e{deaths}'
+        - ''
+        - '&6&l➩ &f&lONLINE'
+        - '&8&l➩ &e{online}'
+        - ''
+        - '&b&lMC-MARKET.ORG'
+    WAITING:
+        Name: '&e&lTHE BRIDGE'
+        Update: 1 second
+        Lines:
+        - '&7{date}'
+        - ''
+        - '&8&l▪ &fPlayers: &a{playing}/{max}'
+        - ''
+        - '&8&l▪ &6&fStarting in &a{seconds}'
+        - ''
+        - '&8&l▪ &fMode: &e{mode}'
+        - ''
+        - '&8&l▪ &fMap: &a{arena}'
+        - ''
+        - '&b&lMC-MARKET.ORG'
+    DOUBLES:
+        Name: '&e&lTHE BRIDGE'
+        Update: 1 second
+        Lines:
+        - '&7{date}'
+        - ''
+        - '&c[R] {red-display}'
+        - '&1[B] {blue-display}'
+        - ''
+        - '&fKills: &a{kills}'
+        - '&fGoals: &a{goals}'
+        - ''
+        - '&fMode: &e{mode}'
+        - ''
+        - '&fMap: &a{arena}'
+        - ''
+        - '&b&lMC-MARKET.ORG'
+    QUADRUPLES:
+        Name: '&e&lTHE BRIDGE'
+        Update: 1 second
+        Lines:
+        - '&7{date}'
+        - ''
+        - '&aG&7: {green-display}'
+        - '&cR&7: {red-display}'
+        - '&1B&7: {blue-display}'
+        - '&eY&7: {yellow-display}'
+        - ''
+        - '&fKills: &a{kills}'
+        - '&fGoals: &a{goals}'
+        - ''
+        - '&fMode: &e{mode}'
+        - ''
+        - '&fMap: &a{arena}'
+        - ''
+        - '&b&lMC-MARKET.ORG'
+
+# Counted in ticks, 20 ticks = 1 second
+Display:
+    Join-Lobby:
+        Title: '&8&l» &e&l&nTHE BRIDGE &8&l«'
+        Subtitle: '&7Welcome'
+        Duration: 20
+        FadeIn: 20
+        FadeOut: 20
+    Eliminated:
+        Title: ''
+        Subtitle: '&cYou are Eliminated!'
+        Duration: 20
+        FadeIn: 20
+        FadeOut: 20
+    Win:
+        Title: '{team} WINS!'
+        Subtitle: '&1&l{blue-goals} &7- &c&l{red-goals}'
+        Duration: 20
+        FadeIn: 20
+        FadeOut: 20
+    Starting:
+        Title: '&6&l{seconds}'
+        Subtitle: ''
+        Duration: 20
+        FadeIn: 0
+        FadeOut: 0
+    Start:
+        Title: ''
+        Subtitle: '&aFight'
+        Duration: 20
+        FadeIn: 20
+        FadeOut: 20
+    Score-Doubles:
+        Title: '{player} scored!'
+        Subtitle: '&7Cages open in &a&l{seconds}s...'
+        Duration: 20
+        FadeIn: 0
+        FadeOut: 0
+    Score-Quadruples:
+        Title: '{player} &7scored on {lose-team}&7!'
+        Subtitle: '{player-team} &7stole &c1❤ &7from {lose-team}&7!'
+        Duration: 20
+        FadeIn: 20
+        FadeOut: 20
+    Player-Invite:
+        Title: '&8&l» &eINVITE A PLAYER TO YOUR PARTY &8&l«'
+        Subtitle: '&7&nTYPE THE NAME IN CHAT!'
+        Duration: 20
+        FadeIn: 20
+        FadeOut: 20
