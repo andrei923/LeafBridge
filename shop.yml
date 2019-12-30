@@ -8,135 +8,14 @@ Trails:
         - ''
     Lore:
         Locked:
-        - '&8➥ &7Cost: &e{price}'
+        - '&8➥ &7Cost: &e{Price}'
         - ''
         - '&8➥ &7Click to Purchase'
         Unlocked:
         - '&8➥ &7Click to Select'
         Preview:
         - ''
-        - '&8➥ &7Cost: &e{price}'
-    List:
-        TNT:
-            Price: 3000
-            Display:
-                Name: '&aTNT &7Trail'
-                Item: tnt
-            Amount: 1
-            Type: BLOCK_CRACK
-            Particle: TNT
-        Ice:
-            Price: 1498
-            Display:
-                Name: '&aIce &7Trail'
-                Item: Ice block
-            Amount: 1
-            Type: BLOCK_CRACK
-            Particle: ICE
-        Diamond:
-            Price: 1498
-            Display:
-                Name: '&aDiamond &7Trail'
-                Item: Diamond block
-            Amount: 1
-            Type: BLOCK_CRACK
-            Particle: DIAMOND_BLOCK
-        Explosion Normal:
-            Price: 1498
-            Display:
-                Name: '&aExplosion Normal &7Trail'
-                Item: pufferfish
-            Amount: 1
-            Type: EFFECT
-            Particle: EXPLOSION_NORMAL
-        Firework Spark:
-            Price: 1498
-            Display:
-                Name: '&aFirework Spark &7Trail'
-                Item: firework rocket
-            Amount: 1
-            Type: EFFECT
-            Particle: FIREWORKS_SPARK
-        Water Bubble:
-            Price: 1498
-            Display:
-                Name: '&aWater Bubble &7Trail'
-                Item: water bucket
-            Amount: 1
-            Type: EFFECT
-            Particle: WATER_BUBBLE
-        Water Splash:
-            Price: 1498
-            Display:
-                Name: '&aWater Splash &7Trail'
-                Item: water bucket
-            Amount: 1
-            Type: EFFECT
-            Particle: WATER_SPLASH
-        Crit:
-            Price: 1498
-            Display:
-                Name: '&aCrit &7Trail'
-                Item: iron axe
-            Amount: 1
-            Type: EFFECT
-            Particle: CRIT
-        Villager Happy:
-            Price: 1498
-            Display:
-                Name: '&aVillager Happy &7Trail'
-                Item: green dye
-            Amount: 1
-            Type: EFFECT
-            Particle: VILLAGER_HAPPY
-        Note:
-            Price: 1498
-            Display:
-                Name: '&aNote &7Trail'
-                Item: note block
-            Amount: 1
-            Type: EFFECT
-            Particle: NOTE
-        Lava:
-            Price: 1498
-            Display:
-                Name: '&aLava &7Trail'
-                Item: lava bucket
-            Amount: 1
-            Type: EFFECT
-            Particle: LAVA
-        Flame:
-            Price: 1498
-            Display:
-                Name: '&aFlame &7Trail'
-                Item: flint and steel
-            Amount: 1
-            Type: EFFECT
-            Particle: FLAME
-        Cloud:
-            Price: 1498
-            Display:
-                Name: '&aFlame &7Trail'
-                Item: sugar
-            Amount: 1
-            Type: EFFECT
-            Particle: CLOUD
-        Heart:
-            Price: 1498
-            Display:
-                Name: '&aHeart &7Trail'
-                Item: red dye
-            Amount: 1
-            Type: EFFECT
-            Particle: HEART
-        Snowball:
-            Price: 1498
-            Display:
-                Name: '&aSnowBall &7Trail'
-                Item: snowball
-            Amount: 1
-            Type: EFFECT
-            Particle: SNOWBALL
+        - '&8➥ &7Cost: &e{Price}'
 
 Hats:
     Menu: '&8&l» &7Hats'
@@ -148,17 +27,92 @@ Hats:
         - ''
     Lore:
         Locked:
-        - '&8➥ &7Cost: &e{price}'
+        - '&8➥ &7Cost: &e{Price}'
         - ''
         - '&8➥ &7Click to Purchase'
         Unlocked:
         - '&8➥ &7Click to Select'
         Preview:
         - ''
-        - '&8➥ &7Cost: &e{price}'
+        - '&8➥ &7Cost: &e{Price}'
     List:
         Villager Hat:
             Price: 1000
-            Name: '&aVillager &7Hat'
-            Id: 1ede93aa-121b-4c19-979a-d05c710ece9b
+            Id:  1ede93aa-121b-4c19-979a-d05c710ece9b
             Value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzkxNzc0ZThlNDNjZjUzNWUzMDk3MTZhMDNiNGE0YTgxMTA4NzkzZGU3NjhlYmQzZjEyMjRlNjgwMjFmZTk3ZSJ9fX0=
+        Knight:
+            Price: 1000
+            Id:  23042b04-0a7f-4193-9668-65fa06f60594
+            Value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWI0YmY3YTdhNDVkOGRkZWI0NzBjOTYxNzM3Y2U5NjIxMTQ4ZmNlMmNmZTgxNDU5YzMxMTc3NWNkYWI5In19fQ==
+        Dallas:
+            Price: 1000
+            Id:  eaeefbd4-b859-45d9-aa0b-35ad70b6081f
+            Value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvN2U0ZGI5YzJjMDY3ZWIyODNkZjk4NzU0NzIxNjJkZWY2MGY2N2JlNGY1MzhmNmRhZWU3YWY5ODE4MjZiYzc3MiJ9fX0
+        Iron Man:
+            Price: 1000
+            Id:  e12b91ea-e03f-4b9b-8bd0-e857bdca8c41
+            Value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNWUyNWI1Y2Y5MGE2MmQ4NDg1NzI4Mjk3N2Y0ZDA3YjkxMjlmM2NmODIwYjVlZDM3ZjZiYzc4M2U0ZGVlMzA5NyJ9fX0=
+        Batman:
+            Price: 1000
+            Id:  1f43d66b-7723-4aec-94b2-949078178ca0
+            Value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOGFkNmFiMTQ0ZjY0YmQzYmFmNDY0ODc5YjNjNjQ3ZWQ1ZmJjYTc3M2IyYjgyNWJmODVlMWU4YjdlM2ZkYjE4In19fQ==
+        CAPTAIN JACK SPARROW:
+            Price: 1000
+            Id:  04c46184-ae08-4c81-ae70-8888c4ba4809
+            Value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODY5Zjc2ZmZiMzcxY2FiYTE4Njc5MjVhYzdmZDljMjEyOTRjNWE3YjZkM2MwNDY5YmI1NmVlNGJkM2VhMjcyIn19fQ==
+        Naruto:
+            Price: 1000
+            Id:  774fcc07-84e4-4cce-9720-2ae9cd28a5f6
+            Value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjA2ZTM0YzFjOTRjN2I4MjljNTlkMDFjNzQ1M2Q1ZjNlODI1OWYzODljMmFjYTJmYTMxNGRjYTQwODY5M2NlIn19fQ==
+        Sasuke:
+            Price: 1000
+            Id:  c60529bc-aa8c-44c4-8f6e-67da4d6403c7
+            Value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZGFlYmNhMzcyOWJhOTgwOTM1OTg4OGNiNDY4MTM1YmI0OTNjOGQxOGM5OGI5NWMxNTdlZTk5MDQyOWExMCJ9fX0=
+        Kakashi:
+            Price: 1000
+            Id:  93b87467-04d3-43f2-a976-13da388aaba0
+            Value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWQyYWQ4NGI5YjRhMTljOTE4ZGVkOTc5YWVlNDAxNjg5ZThiY2ZiODU4Njk5NmQ3ZmExMTRlNWZhMmJlOGJlIn19fQ==
+        Vampire:
+            Price: 1000
+            Id:  a8701efe-e48e-4ebf-a844-bc9c79b3d051
+            Value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOGQ0NDc1NmUwYjRlY2U4ZDc0NjI5NmEzZDVlMjk3ZTE0MTVmNGJhMTc2NDdmZmUyMjgzODUzODNkMTYxYTkifX19
+        Herobrine:
+            Price: 1000
+            Id:  d0b15454-36fa-43e4-a247-f882bb9fe288
+            Value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOThiN2NhM2M3ZDMxNGE2MWFiZWQ4ZmMxOGQ3OTdmYzMwYjZlZmM4NDQ1NDI1YzRlMjUwOTk3ZTUyZTZjYiJ9fX0=
+        Bear:
+            Price: 1000
+            Id:  54eba42c-39f4-46c5-b8ed-700f352e79b1
+            Value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjEwODQxYzIwOGM2MDIwYWI0MWNiMmU3NDk4ZjdjYWVhOGU3NDNiNzNiZTcyNDU4MDEzNThkZTI3Nzc2NTE0YyJ9fX0=
+        Cool Doge:
+            Price: 1000
+            Id:  3d30c57f-124e-4833-b57e-0cd9229158b7
+            Value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmQ5NTMyZjRlMmU5OWJkMTE3MTU5ZTA4Y2Q0OTQ1MmUyYzY5ZmFiMmI1NjI2YjRiMGYzNmY1MmIwYTY5MjI3MSJ9fX0=
+        Walrus:
+            Price: 1000
+            Id:  a185ff1a-f32e-47e0-be61-5a612f130f33
+            Value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDdiYWVkYWY5YWQ5NTQ3NGViMWJlNTg5MjQ0NDVkZmM3N2JiZGMyNTJjYzFjODE2NDRjZjcxNTRjNDQxIn19fQ==
+        Squirrel:
+            Price: 1000
+            Id:  39562d0b-78c2-4191-893f-cb740456aa2b
+            Value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzc2OTU5YTMxMWJiMzRiNGRjMTRhNmEwMzA3MTg1ZTdlZDIyYzk5ZmJhOGVmZGM1NGY3N2Y3NzZlMjk3MzFlIn19fQ==
+        Big Grin Emoticon:
+            Price: 1000
+            Id:  988770c2-3a2d-41c3-a753-b13fa383e823
+            Value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTA1OWQ1OWViNGU1OWMzMWVlY2Y5ZWNlMmY5Y2YzOTM0ZTQ1YzBlYzQ3NmZjODZiZmFlZjhlYTkxM2VhNzEwIn19fQ==
+        Neutral Emoticon:
+            Price: 1000
+            Id:  9b2448aa-b598-40af-904d-d277eb5a5ae5
+            Value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODExNWRjYzE3YjJlMTVjZDQxODMxODg1ZDdkYmI4ZmYyZTljYWM0ZmVjNzA4MDM1OGZlNTVmOTNlZWExOWIifX19
+        Cool Emoticon:
+            Price: 1000
+            Id:  bcefcc41-e997-4845-ae08-7b8a1a2d51b6
+            Value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODY4ZjRjZWY5NDlmMzJlMzNlYzVhZTg0NWY5YzU2OTgzY2JlMTMzNzVhNGRlYzQ2ZTViYmZiN2RjYjYifX19
+        Mad Marionette:
+            Price: 1000
+            Id:  2c4434f6-62ed-4c20-81a3-19e00a83560d
+            Value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjFiZmNiYTExOGVlZjQ5YTc2ODJjZWQyZmY2NDBhNzY4NDM4ZmUxM2U0YmZkYzIxNjQzMTI2Y2M1MzMyYWQ3MSJ9fX0=
+        Toaster:
+            Price: 1000
+            Id:  1e815fac-140b-4adf-91a3-a6b164f89ab4
+            Value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzExNmY4OWQyZThkYmQxMjY2MzY0MTVmOTMyODY0MWM2ZmEyODkwYzMyZDQzOWVmZmMzOGEyMjk2YzJkIn19fQ==           
