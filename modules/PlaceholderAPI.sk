@@ -1,5 +1,5 @@
 on join:
-	if yaml value "Settings.MySQL.Enabled" from "bridge.config" is true:
+	if yaml value "Settings.MySQL.Enabled" from "LeafBridge.config" is true:
 		bridge_stats("check", player, "null", 0)	
 
 on papi placeholder request with the prefix "LeafBridge":
