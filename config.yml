@@ -1,194 +1,170 @@
-# Start-Hearts - Number of start hearts in quadruples(XvXvXvX) mode.
-# Maximum amount for party size is 28.
 Settings:
     Bungeecord:
         Enabled: false
-        fallback-server: lobby
+        Lobby: lobby
     Timers:
-        waiting-time: 30
-        full-waiting-time: 10
-        win-lenght: 10
-    MySQL:
-        Enabled: false
-        host: localhost
-        port: 3306
-        username: root
-        password: test
-        database: mysql
-        tablename: LeafBridge_STATS
-        use_ssl: false
+        Waiting: 30
+        WaitingFull: 10
+        WinLenght: 10
     Chat:
-        in-lobby: '&8&l[&e{coins}&8&l] &7{player} &8&l» &7{message}'
-        in-game: '&8&l[&e{team}&8&l] &7{player} &8&l» &7{message}'
-        in-waiting-lobby: '&7{player} &8&l» &7{message}'
-        spectator-chat: '&cSpectator &c» &7{player} &8&l» &7{message}'
-        party-chat-symbol: '@'
-        party-chat-format: '&3Party &8»&7 &a{player} &8&l»&7 {message}'
+        Lobby: '&8[&e{coins}&8&l] &7{player} &8» &7{message}'
+        Game: '&8[&e{team}&8&l] &7{player} &8» &7{message}'
+        WaitingLobby: '&7{player} &8» &7{message}'
+        Spectator: '&cSpectator &c» &7{player} &8» &7{message}'
     Commands:
-        only-in-game-commands: true
-        in-game-commands:
-        - bridge
-        - hub
-        - lobby
-        - msg
-        - tell
-        - w
-        - tp
-        - list
-        - stafflist
-        - report
-        kill-command:
+        Whitelist:
+            Enabled: true
+            Allowed:
+            - bridge
+            - hub
+            - lobby
+            - msg
+            - tell
+            - w
+            - tp
+            - list
+            - stafflist
+            - report
+        Kill:
         - mysterydust add {killer} 3 msg=false
-        win-command:
+        Win:
         - mysterydust add {player} 50 msg=false
-    Name-Tags:
-        use-lobby-tags: true
-        main-lobby: '&7'
-        waiting-lobby: '&7'
+    NameTags:
+        Lobby:
+            Main: '&7'
+            Waiting: '&7'
     Rewards:
-        coins-per-kill: 5
-        coins-per-win: 20
+        Win:
+            Coins: 5
+        Kill:
+            Coins: 20
     Game-Status:
-        WAITING: '&a&lLOBBY'
-        IN-GAME: '&a&lIN-GAME'
-        STARTING: '&a&lSTARTING'
-        RESTARTING: '&c&lENDING'
+        WAITING: '&aWaiting...'
+        IN-GAME: '&cIN-GAME'
+        STARTING: '&bStarting...'
+        RESTARTING: '&cEnding...'
     Misc:
-        Vault: false
-        Max-Party-Size: 28
         Start-Hearts: 2
         Per-Arena-Tablist: true
+    Leaderboards:
+        Type: SKULLS
+        EmptyPlaceReplace: Loading...
+        SmallArmorStand: true
     Sounds:
-        KILL:
+        Kill:
             Sound: ORB_PICKUP
             Volume: 1.0
             Pitch: 1.0
-        JOIN-ARENA:
+        JoinGame:
             Sound: LEVEL_UP
             Volume: 1.0
             Pitch: 1.0
-        STARTING-ARENA:
+        StartingGame:
             Sound: LEVEL_UP
             Volume: 1.0
             Pitch: 1.0
-        FORCED-START:
-            Sound: LEVEL_UP
-            Volume: 1.0
-            Pitch: 1.0
-        NOT-ENOUGHT-PLAYERS:
+        NeedMorePlayers:
             Sound: ANVIL_BREAK
             Volume: 1.0
             Pitch: 1.0
-        RECEIVE-ARROW:
+        ReceiveArrow:
             Sound: NOTE_PLING
             Volume: 1.0
             Pitch: 1.0
 
-Teams:
-    Name:
-        blue: '&1Blue'
-        red: '&cRed'
-        yellow: '&eYellow'
-        green: '&aGreen'
-    TAG:
-        blue: '&1B &7'
-        red: '&cR &7'
-        yellow: '&eY &7'
-        green: '&aG &7'
-    COLOR:
-        blue: '&1'
-        red: '&c'
-        yellow: '&e'
-        green: '&a'
+MySQL:
+    Enabled: false
+    Host: localhost
+    Port: 3306
+    Username: root
+    Password: test
+    Database: mysql
+    Tablename: bridge_stats
+    Use_ssl: false
 
-Signs:
-    Arenas:
-        Line-1: '&8[&6BRIDGE&8]'
-        Line-2: '{status}'
-        Line-3: '{arena}'
-        Line-4: '&8({playing}/{max})'
-        AutoJoin: '&c&lPlay'
-    Top:
-        Line-1: '&6&lBRIDGE &7&l➜ &a&lTOP'
-        Line-2: '&7&l➜ &a&lTOP &b{TOP}'
-        Line-3: '{player}'
-        Line-4: '&8#{place} &3{value}'
+Teams:
+    Blue:
+        Name: '&1Blue'
+        NameTag: '&1B &7'
+        Color: '&1'
+        Item:
+            Logo: blue clay
+            Cage: blue glass
+    Red:
+        Name: '&cRed'
+        NameTag: '&cR &7'
+        Color: '&c'
+        Item:
+            Logo: red clay
+            Cage: red glass
+    Yellow:
+        Name: '&eYellow'
+        NameTag: '&eY &7'
+        Color: '&e'
+        Item:
+            Logo: yellow clay
+            Cage: yellow glass
+    Green:
+        Name: '&aGreen'
+        NameTag: '&aG &7'
+        Color: '&a'
+        Item:
+            Logo: green clay
+            Cage: green glass
 
 Items:
     Teleporter:
-        Name: '&8&l» &aPlay teleporter &7(Right Click)'
+        Name: '&8» &aPlay teleporter &7(Right Click)'
         Item: compass
         Slot: 0
         Lore:
         - ''
     Spectator-Settings:
-        Name: '&8&l» &bSpectator Settings &7(Right Click)'
+        Name: '&8» &bSpectator Settings &7(Right Click)'
         Item: redstone comparator item
         Slot: 4
         Lore:
         - ''
     Leave:
-        Name: '&8&l» &6Leave the game'
+        Name: '&8» &6Leave the game'
         Item: magma cream
         Slot: 8
         Lore:
         - ''
     Team-Selector:
-        Name: '&8&l» &6Team Selector &7(Right Click)'
+        Name: '&8» &6Team Selector &7(Right Click)'
         Item: chest
         Slot: 0
         Lore:
         - ''
     Play:
-        Name: '&8&l» &3Play &7(Right Click)'
+        Name: '&8» &3Play &7(Right Click)'
         Item: diamond axe
         Slot: 0
         Lore:
         - ''
-    Profile:
-        Name: '&8&l» &3Profile &7(Right Click)'
-        Item: custom player head
-        Id: 167f6ca4-7ee1-4990-b5c8-27a25eb65de6
-        Value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGY1YjQwOTQxN2ZmMmU3NzdkNWU4M2NlY2QyODU2ZDJjY2M2OGRmZmRlZjk0MDE1NGU5NDVhY2U2ZDljY2MifX19
-        Slot: 4
-        Lore:
-        - ''
     Shop:
-        Name: '&8&l» &3Shop &7(Right Click)'
+        Name: '&8» &3Shop &7(Right Click)'
         Item: anvil
-        Slot: 1
+        Slot: 3
         Lore:
         - ''
-    Hotbar-Editor:
-        Name: '&8&l» &aLayout Editor  &7(Right Click)'
+    HotbarEditor:
+        Name: '&8» &aLayout Editor  &7(Right Click)'
         Item: item frame
-        Slot: 6
-        Lore:
-        - ''
-    Top:
-        Name: '&8&l» &3Leaderboards &7(Right Click)'
-        Item: head
-        Slot: 7
+        Slot: 5
         Lore:
         - ''
     Lobby-Leave:
-        Name: '&8&l» &6Leave the lobby &7(Right Click)'
+        Name: '&8» &6Leave the lobby &7(Right Click)'
         Item: magma cream
         Slot: 8
         Lore:
         - ''
     Custom-Item:
-        Name: '&8&l» &7EXAMPLE'
+        Name: '&8» &7EXAMPLE'
         Item: air
         Slot: 9
         Lore:
         - ''
         Command: example command
-
-# TYPES: 'SKULLS' AND 'STANDS'
-LeaderBoards:
-    TYPE: SKULLS
-    SMALL-ARMOR-STAND: true
-    EMPTY-PLACE-REPLACE: Loading...
-
-Config-Version: 0.7.1

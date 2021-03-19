@@ -1,21 +1,7 @@
-on join:
-	if yaml value "Settings.MySQL.Enabled" from "LeafBridge.config" is true:
-		bridge_stats("check", player, "null", 0)	
-
 on papi placeholder request with the prefix "LeafBridge":
-	bridge_stats("check", player, "null", 0)
-	yaml "bridge.player.data.%uuid of player%" is not loaded:
-		load yaml "plugins/LeafBridge/playerdata/%uuid of player%.yml" as "bridge.player.data.%uuid of player%"
 	loop "coins", "kills", "deaths", "wins" and "goals":	
-		identifier is "%loop-value%"
-		set {_stats} to yaml value "Stats.%loop-value%" from "bridge.player.data.%uuid of player%"
-		set the result to "%{_stats}%"	
-	
-on quit:
-	if {LeafBridge::player::%player%::state} is set:
-		stop
-	yaml "bridge.player.data.%uuid of player%" is loaded
-	unload yaml "bridge.player.data.%uuid of player%"
-
-on load:
-	broadcast "%yaml value ""Prefix.Prefix"" from ""LeafBridge.language""%&aPlaceholderAPI Module loaded."
+		identifier is "%loop-value-1%"
+		if {-bridge::player::stats::%player%::%loop-value-1%} is set:
+			set the result to "%{-bridge::player::stats::%player%::%loop-value-1%}%"	
+		else:
+			set the result to "0"
