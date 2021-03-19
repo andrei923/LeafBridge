@@ -6,9 +6,18 @@ Settings:
         Waiting: 30
         WaitingFull: 10
         WinLenght: 10
+    MySQL:
+        Enabled: false
+        Host: localhost
+        Port: 3306
+        Username: root
+        Password: test
+        Database: mysql
+        Tablename: bridge_stats
+        Use_ssl: false
     Chat:
-        Lobby: '&8[&e{coins}&8&l] &7{player} &8» &7{message}'
-        Game: '&8[&e{team}&8&l] &7{player} &8» &7{message}'
+        Lobby: '&8[&e{wins}&8] &7{player} &8» &7{message}'
+        Game: '&8[&e{team}&8] &7{player} &8» &7{message}'
         WaitingLobby: '&7{player} &8» &7{message}'
         Spectator: '&cSpectator &c» &7{player} &8» &7{message}'
     Commands:
@@ -71,16 +80,6 @@ Settings:
             Sound: NOTE_PLING
             Volume: 1.0
             Pitch: 1.0
-
-MySQL:
-    Enabled: false
-    Host: localhost
-    Port: 3306
-    Username: root
-    Password: test
-    Database: mysql
-    Tablename: bridge_stats
-    Use_ssl: false
 
 Teams:
     Blue:
